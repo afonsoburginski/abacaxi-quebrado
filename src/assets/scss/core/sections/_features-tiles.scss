@@ -1,0 +1,111 @@
+.feature {
+
+	.section-inner {
+		padding-top: $feature--padding-t__mobile;
+		padding-bottom: $feature--padding-b__mobile;
+	}
+
+	.section-header {
+		padding-bottom: $feature-header--padding__mobile;
+	}
+
+	.tiles-wrap {
+		@if ( $feature-items--padding__mobile != null ) {
+			margin-right: -($feature-items--padding__mobile * 0.5);
+			margin-left: -($feature-items--padding__mobile * 0.5);
+			margin-top: -($feature-items--padding__mobile * 0.5);
+
+			&:last-of-type {
+				margin-bottom: -($feature-items--padding__mobile * 0.5);
+			}
+
+			&:not(:last-of-type) {
+				margin-bottom: ($feature-items--padding__mobile * 0.5);
+			}
+		}
+
+		&.push-left {
+
+			&::after {
+				flex-basis: $feature-item--width;
+				max-width: $feature-item--width;
+				@if ( $feature-items--padding__mobile != null ) {
+					padding-left: $feature-items--padding__mobile * 0.5;
+					padding-right: $feature-items--padding__mobile * 0.5;
+				}
+			}
+		}
+	}
+
+	.tiles-item {
+		/* margin-top: -5rem; */
+		
+		flex-basis: $feature-item--width;
+		max-width: $feature-item--width;
+		@if ( $feature-items--padding__mobile != null ) {
+			padding: $feature-items--padding__mobile * 0.5;
+		}
+	}
+
+	.tiles-item-inner {
+		padding-top: $feature-item--inner-padding-v;
+		padding-bottom: $feature-item--inner-padding-v;
+		padding-left: $feature-item--inner-padding-h;
+		padding-right: $feature-item--inner-padding-h;
+	}
+}
+
+.feature-item-content {
+	flex-grow: 1;
+}
+
+.feature-item-source {
+	display: inline-flex; // to allow centering when using .content-center on a parent tag
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@include media( '>medium' ) {
+
+	.feature {
+
+		.section-inner {
+			margin-top: -5rem;
+			padding-top: 0px;
+			padding-bottom: 0rem;
+		}
+
+		.section-header {
+			padding-bottom: $feature-header--padding__desktop;
+		}
+
+		@if ( $feature-items--padding__desktop != null ) {
+
+			.tiles-wrap {
+				margin-right: -($feature-items--padding__desktop * 0.5);
+				margin-left: -($feature-items--padding__desktop * 0.5);
+				margin-top: -($feature-items--padding__desktop * 0.5);
+
+				&:last-of-type {
+					margin-bottom: -($feature-items--padding__desktop * 0.5);
+				}
+
+				&:not(:last-of-type) {
+					margin-bottom: ($feature-items--padding__desktop * 0.5);
+				}
+
+				&.push-left {
+
+					&::after {
+						padding-left: $feature-items--padding__desktop * 0.5;
+						padding-right: $feature-items--padding__desktop * 0.5;
+					}
+				}
+			}
+
+			.tiles-item {
+				padding: $feature-items--padding__desktop * 0.5;
+			}
+		}
+	}
+}

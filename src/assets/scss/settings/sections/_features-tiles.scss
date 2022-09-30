@@ -1,0 +1,12 @@
+// Testimonial (core/sections/_feature.scss) ---------------
+$feature--padding-t__mobile: 		null;		// feature, top padding (mobile)
+$feature--padding-b__mobile: 		null;		// feature, bottom padding (mobile)
+$feature--padding-t__desktop: 		null;		// feature, top padding (desktop)
+$feature--padding-b__desktop: 		null;		// feature, bottom padding (desktop)
+$feature-header--padding__mobile: 	null;		// feature header, bottom padding (mobile)
+$feature-header--padding__desktop:	null;		// feature header, bottom padding (desktop)
+$feature-items--padding__mobile: 	null;		// padding between feature items (mobile)
+$feature-items--padding__desktop: 	null;		// padding between feature items (desktop)
+$feature-item--width: 				340px;		// feature item, width
+$feature-item--inner-padding-v: 	0px;		// feature item, inner top and bottom padding (it inherits $tiles-item--inner-padding-v unless you replace null with a new value)
+$feature-item--inner-padding-h: 	0px;		// feature item, inner left and right padding (it inherits $tiles-item--inner-padding-h unless you replace null with a new value)

@@ -1,0 +1,28 @@
+#justify {
+    width: 100%;
+    text-align: justify;
+}
+.text{
+    display: flex;
+    width: 100%;
+    list-style: none;
+  }
+    
+  .read-or-hide{
+    color: grey;
+    cursor: pointer;
+  }
+
+#justify p {
+    margin: 0 auto;
+    max-width: 100%;
+    list-style: none;
+    text-align: justify;
+    display: list-item;
+}
+
+#justify p:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
