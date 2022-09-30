@@ -3,6 +3,7 @@ import styled from "styled-components";
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import ReactPlayer from 'react-player'
 import Modal from '../elements/Modal';
 import Image from '../elements/Image';
 
@@ -103,11 +104,10 @@ const FeaturesSplit = ({
             </div> */}
 
             <div className="split-item">
-
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <TitleStyle>NOSSO GADO</TitleStyle>
                 <p className="m-0" id="justify">
-                  &nbsp; &nbsp; O confinamento abacaxi quebrado possue um sistema de produção de gado de corte para o abastecimento, com carne de origem segura e padrão de qualidade constante,
+                  &nbsp; &nbsp; O <b> confinamento abacaxi quebrado </b> possue um sistema de produção de gado de corte para o abastecimento, com carne de origem segura e padrão de qualidade constante,
                   tanto para o mercado interno quanto para a exportação.
                 </p>
 
@@ -119,43 +119,79 @@ const FeaturesSplit = ({
                   algumas enfermidades e parasitas que possam a cometer sua saúde, feito isso os animais são separados em lotes por idade, tamanho e peso padrão para que sejam direcionados as devidas baias onde começam a ser suplementados com ração.
                   </ReadMore>
                 </p>
-                
-{/*                 <Link style={{color: "grey", cursor: "pointer"}}> Ver Mais... </Link> */}
 
               </div>
 
-              <div className="hero-figure reveal-from-bottom" data-reveal-value="20px" data-reveal-delay="800">
-                  <a
-                    data-video="https://player.vimeo.com/video/740134746"
-                    href="#0"
-                    aria-controls="video-modal"
-                    onClick={openModal}
-                  >
-                    <Image
-                      className="has-shadow"
-                      src={require('./../../assets/images/video-placeholder.png')}
-                      alt="Hero"
-                      width={896}
-                      height={504} />
-                  </a>
-                </div>
-                <Modal
-                  id="video-modal"
-                  show={videoModalActive}
-                  handleClose={closeModal}
-                  video="https://player.vimeo.com/video/740134746"
-                  videoTag="iframe" />
+              <ReactPlayer url='https://youtu.be/KRr4PLcsOLk?list=PLusmMn8IWnPzH-BauEizPIyGV3_2kAb9o' />
+
+             {/*  <div className="hero-figure reveal-from-bottom" data-reveal-value="20px" data-reveal-delay="800">
+                <a
+                  data-video="https://player.vimeo.com/video/740134746"
+                  href="#0"
+                  aria-controls="video-modal"
+                  onClick={openModal}
+                >
+                  <Image
+                    className="has-shadow"
+                    src={require('./../../assets/images/video-placeholder.png')}
+                    alt="Hero"
+                    width={896}
+                    height={504} />
+                </a>
               </div>
 
-              <TitleStyle>HISTÓRIA</TitleStyle>
+              <Modal
+                id="video-modal"
+                show={videoModalActive}
+                handleClose={closeModal}
+                video="https://player.vimeo.com/video/740134746"
+                videoTag="iframe" 
+              /> */}
+            </div>
 
-              <p className="m-0" id="justify">
-                &nbsp; &nbsp; Com mais de dez anos no seguimento de confinamento de gado, uma parceria entre Flavio Martins Simone e Moises Maciel Veiga Ribeiro
-                ao longo desses anos atingindo a sua meta de 22.500,00 mil animais estáticos. No ano de 2021 abatendo 42.000.00 mil animais,
-                e nesse ano de 2022 ate o mês de julho foram abatidos 32.000,00 mil bovinos, não trabalhamos com boi tell.
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <TitleStyle>HISTÓRIA</TitleStyle>
+                <p className="m-0" id="justify">
+                  &nbsp; &nbsp; Com mais de dez anos no seguimento de confinamento de gado, uma parceria entre Flavio Martins Simone e Moises Maciel Veiga Ribeiro
+                  ao longo desses anos atingindo a sua meta de 22.500,00 mil animais estáticos. No ano de 2021 abatendo 42.000.00 mil animais,
+                  e nesse ano de 2022 ate o mês de julho foram abatidos 32.000,00 mil bovinos, não trabalhamos com boi tell.
+                </p>
+
                 <br/>
-                &nbsp; &nbsp; O <b> Confinamento Abacaxi </b> trabalha com cem por cento de rebanho próprio, nosso compromisso é com o bem estar dos animais, meio ambiente, com os nossos colaboradores e fornecedores.
-              </p>
+
+                <p className="m-0" id="justify">
+                  &nbsp; &nbsp; O <b> Confinamento Abacaxi </b> trabalha com cem por cento de rebanho próprio, nosso compromisso é com o bem estar dos animais,
+                  meio ambiente, com os nossos colaboradores e fornecedores.
+                </p>
+              </div>
+
+              <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+
+              {/* <div className="hero-figure reveal-from-bottom" data-reveal-value="20px" data-reveal-delay="800">
+                <a
+                  data-video="https://player.vimeo.com/video/740134746"
+                  href="#0"
+                  aria-controls="video-modal"
+                  onClick={openModal}
+                >
+                  <Image
+                    className="has-shadow"
+                    src={require('./../../assets/images/video-placeholder.png')}
+                    alt="Hero"
+                    width={896}
+                    height={504} />
+                </a>
+              </div>
+
+              <Modal
+                id="video-modal"
+                show={videoModalActive}
+                handleClose={closeModal}
+                video="https://player.vimeo.com/video/740134746"
+                videoTag="iframe" 
+              /> */}
+            </div>
 
           </div>
         </div>

@@ -76,16 +76,10 @@ const Footer = ({
                 Logistica e Financeiro
               </h5>
               <li>
-                <a href="tel:+5566996390632">Flávio: (66) 99639-0632</a>
+                <a href="tel:+5566996157748">Felipe: (66) 99615-7748</a>
               </li>
               <li>
-                <a href="tel:+5566999886915">Moisés: (66) 99988-6915</a>
-              </li>
-              <li>
-                <a href="tel:+5566999854833">Fernando: (66) 99985-4833</a>
-              </li>
-              <li>
-                <a href="tel:+5566999886615">Fabio: (66) 99988-6615</a>
+                <a href="tel:+5566999859938">André: (66) 99985-9938</a>
               </li>
             </ul>
           </div>

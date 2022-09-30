@@ -1,8 +1,8 @@
 import Foto1 from "../../../assets/images/gado1.png";
 import Foto2 from "../../../assets/images/gado2.png";
 import Foto3 from "../../../assets/images/gado3.png";
-import Video1 from "../../../assets/images/video1.MP4";
-import Video2 from "../../../assets/images/video2.MP4";
+import Video1 from "../../../assets/images/video1.mp4";
+import Video2 from "../../../assets/images/video2.mp4";
 import Video3 from "../../../assets/images/video3.mp4";
 
 export const projectsData = [

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Logo from './partials/Logo';
@@ -139,12 +140,9 @@ const Header = ({
                       </a>
                     </li>
                     <li>
-                      <a 
-                        href="#3"
-                        onClick={() => setActiveNav("#3")}
-                      >   
+                      <Link to="" onClick={() => setActiveNav("#3")}>   
                       Trabalhe-Conosco
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
