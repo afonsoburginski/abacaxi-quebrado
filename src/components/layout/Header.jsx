@@ -140,7 +140,7 @@ const Header = ({
                       </a>
                     </li>
                     <li>
-                      <Link to="" onClick={() => setActiveNav("#3")}>   
+                      <Link to="trabalhe" onClick={() => setActiveNav("#work")}>   
                       Trabalhe-Conosco
                       </Link>
                     </li>

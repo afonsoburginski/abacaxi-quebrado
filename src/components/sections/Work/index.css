@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(248, 246, 253);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.app {
+  width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/* Contact.js */
+.form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+
+  background: #fff;
+  font-size: 16px;
+  color: #252B42;
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid #000;
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 7px;
+  color: #fff;
+}

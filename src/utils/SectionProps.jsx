@@ -8,7 +8,9 @@ const SectionShared = {
     topDivider: PropTypes.bool,
     bottomDivider: PropTypes.bool,
     hasBgColor: PropTypes.bool,
-    invertColor: PropTypes.bool
+    invertColor: PropTypes.bool,
+    typeCarousel: PropTypes.bool,
+    setTypeCarousel: PropTypes.func,
   },
   defaults: {
     topOuterDivider: false,
@@ -16,7 +18,9 @@ const SectionShared = {
     topDivider: false,
     bottomDivider: false,
     hasBgColor: false,
-    invertColor: false
+    invertColor: false,
+    typeCarousel: false,
+    setTypeCarousel: () => {},
   }
 }
 

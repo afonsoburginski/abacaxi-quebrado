@@ -1,0 +1,41 @@
+.alice-carousel__dots {
+	display: flex;
+    justify-content: center;
+    margin-bottom: 0px!important;
+}
+
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
+    color: #c7c7c7;
+    font-size: 24px;
+}
+
+.has-top-divider::before {
+    background: transparent
+}
+
+.alice-carousel__next-btn-item:hover, .alice-carousel__prev-btn-item:hover {
+    color: #FFA62B;
+}
+
+.item-carousel {
+    display: flex;
+    height: 340px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+}
+
+.navbar-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 20px;
+}
+
+.navbar-caroursel, button {
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

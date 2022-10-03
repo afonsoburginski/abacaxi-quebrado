@@ -74,9 +74,7 @@ const Contact = () => {
                 <a href="mailto:financeiro_abacaxi@hotmail.com">
                   financeiro_abacaxi@hotmail.com
                 </a>
-              
               </S.EmailCard>
-                  
               <S.TitleCard>FINANCEIRO</S.TitleCard>
               <button type="submit">
                 <a href="https://api.whatsapp.com/send?phone=5566999859938&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20site." target="_blank">

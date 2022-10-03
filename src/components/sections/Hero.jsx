@@ -67,7 +67,7 @@ const Hero = ({
               <p
                 className="m-0 mb-32 reveal-from-bottom ta-l"
                 data-reveal-delay="400"
-                style={{ fontSize: "22px" }}
+                style={{ fontSize: "20px" }}
               >
                 Valorizando a qualidade do gado.
               </p>

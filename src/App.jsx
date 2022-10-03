@@ -4,11 +4,14 @@ import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 
+/* import { BrowseRouter as Router, Switch, Route, Link } from 'react-router-dom'; */
+
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
 // Views 
 import Home from './views/Home';
+import Trabalhe from './views/Trabalhe';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -37,6 +40,7 @@ const App = () => {
       children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/trabalhe" component={Trabalhe} layout={LayoutDefault} />
         </Switch>
       )} />
   );
