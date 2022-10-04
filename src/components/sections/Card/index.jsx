@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import classNames from "classnames";
 import { SectionTilesProps } from "../../../utils/SectionProps";
 import SectionHeader from "../partials/SectionHeader";
@@ -36,6 +36,8 @@ const Testimonial = ({
   setTypeCarousel,
   ...props
 }) => {
+
+
   // const [, setVideomodalactive] = useState(false);
 
   // const openModal = (e) => {
@@ -115,17 +117,20 @@ const Testimonial = ({
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" style={{ padding: "0" }} />
-          <div className="navbar-carousel">
+
+{/*           <div className="navbar-carousel">
             <button type="button" onClick={() => setTypeCarousel("fotos")}>
               Fotos
             </button>
             <button type="button" onClick={() => setTypeCarousel("videos")}>
               Vídeos
             </button>
-          </div>
+          </div> */}
 
           <div className={tilesClasses}>
             {typeCarousel === "fotos" ? (
+              <>
+
               <AliceCarousel
                 controlsStrategy="alternate"
                 infinite
@@ -135,6 +140,8 @@ const Testimonial = ({
                 items={dataCarousel.photos[0].data}
                 responsive={responsive}
               />
+
+              </>
             ) : (
               <AliceCarousel
                 controlsStrategy="alternate"

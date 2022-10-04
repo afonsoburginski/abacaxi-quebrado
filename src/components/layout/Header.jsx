@@ -115,12 +115,14 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <a
+                      <Link
                         href="#0"
+                        to="/" 
+                        id="0"
                         onClick={() => setActiveNav("#0")}
                       >
                       Início
-                      </a>
+                      </Link>
                     </li>
 
                     <li>

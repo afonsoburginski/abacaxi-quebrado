@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styled from "styled-components";
-import { a } from 'react-router-dom';
+import { Link, a } from 'react-router-dom';
 import { FaMapMarkerAlt, FaRegPaperPlane, FaCarSide } from "react-icons/fa";
 import FooterSocial from './partials/FooterSocial';
 
@@ -45,6 +45,9 @@ const Footer = ({
     className
   );
 
+  const [Toggle, showMenu] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
+
   return (
     <footer
       {...props}
@@ -59,13 +62,24 @@ const Footer = ({
                 Informações
               </h5>
               <li>
-                <a href="#0">Início</a>
+                <Link
+                  href="#0"
+                  to="/" 
+                  id="0"
+                  onClick={() => setActiveNav("#0")}
+                >
+                Início
+                </Link>
               </li>
               <li>
                 <a href="#1">Sobre Nós</a>
               </li>
               <li>
-                <a href="#3">Trabalhe Conosco</a>
+                <Link 
+                  to="trabalhe" 
+                  onClick={() => setActiveNav("#work")}>   
+                Trabalhe-Conosco
+                </Link>
               </li>
             </ul>
           </div>

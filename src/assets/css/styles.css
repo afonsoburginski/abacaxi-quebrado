@@ -1,12 +1,17 @@
 .alice-carousel__dots {
-	display: flex;
+	display: none;
     justify-content: center;
     margin-bottom: 0px!important;
 }
 
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item{
+    display: inline-grid;
+    justify-content: center;
+    background-color: #00A0C1;
     color: #c7c7c7;
+    width: 20%;
     font-size: 24px;
+    flex-direction: row;
 }
 
 .has-top-divider::before {
@@ -14,7 +19,9 @@
 }
 
 .alice-carousel__next-btn-item:hover, .alice-carousel__prev-btn-item:hover {
-    color: #FFA62B;
+    transition: 400ms;
+    color: #00A0C1;
+    background-color: #fff;
 }
 
 .item-carousel {
