@@ -9,7 +9,7 @@
 .hero-inner {
 	margin-left: -160px;
 
-	@media screen and (max-width:415px) {
+	@media screen and (max-width:420px) {
 		margin-left: 0px;
 	}
 
@@ -18,7 +18,7 @@
 	> .hero-figure + .hero-content {
 		margin-top: $hero--inner-padding-v_mobile;
 		
-        @media screen and (max-width:415px) {
+        @media screen and (max-width:420px) {
 			display: flex;
 			width: 100%;
 			flex-direction: column;
@@ -91,7 +91,7 @@
 }
 
 .hero-mobile {
-	@media screen and (max-width:415px) {
+	@media screen and (max-width:420px) {
 		display: none;
 	}
 }
@@ -101,11 +101,17 @@
 }
 
 .paddingZero {
-	@media screen and (max-width:415px) {
+	@media screen and (max-width:420px) {
 		padding-top: 0px !important;
 		padding-bottom: 0px !important;
 		padding-left: 5px !important;
 		padding-right: 5px !important;
 		align-items: center;
+	}
+}
+
+.playerMobile {
+	@media screen and (max-width:420px) {
+		height: 210px !important;
 	}
 }

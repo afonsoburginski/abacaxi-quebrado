@@ -122,7 +122,11 @@ const FeaturesSplit = ({
 
               </div>
 
-              <ReactPlayer url='https://youtu.be/KRr4PLcsOLk' />
+              <ReactPlayer className="playerMobile"
+                width='100%'
+                height= '300px'
+                url='https://youtu.be/KRr4PLcsOLk'
+              />
 
              {/*  <div className="hero-figure reveal-from-bottom" data-reveal-value="20px" data-reveal-delay="800">
                 <a
@@ -166,7 +170,11 @@ const FeaturesSplit = ({
                 </p>
               </div>
 
-              <ReactPlayer url='https://youtu.be/oM_mq5Sr880' />
+              <ReactPlayer className="playerMobile"
+                width='100%'
+                height= '300px'
+                url='https://youtu.be/oM_mq5Sr880'
+              />
 
               {/* <div className="hero-figure reveal-from-bottom" data-reveal-value="20px" data-reveal-delay="800">
                 <a
