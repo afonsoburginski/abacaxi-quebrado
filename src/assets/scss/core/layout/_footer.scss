@@ -93,7 +93,26 @@
 		white-space: nowrap;
 		margin-bottom: 0;
 	}
+	
+
+	@media screen and (max-width:415px) {
+		ul{
+			padding: "0 20px !important";
+
+			h5 {
+				padding: "0 12px !important"
+			}
+			
+			li {
+				svg {
+					display: none;
+				}
+			}
+		}	
+	}
+
 }
+
 
 .footer-social {
 

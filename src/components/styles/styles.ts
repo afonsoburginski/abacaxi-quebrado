@@ -20,12 +20,20 @@ const Contact = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 20px 0 60px 0;
+  @media screen and (max-width:415px) {
+    padding: 0px;
+  }
+  
 `;
 
 const HeaderContact = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 4rem;
+  @media screen and (max-width:415px) {
+   display: flex;
+   width: 100%;
+  }
 `;
 
 const Title = styled.h1`
@@ -51,6 +59,10 @@ const BodyContact = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+	@media screen and (max-width:415px) {
+    display: grid;
+    gap: 1rem;
+  }
 `;
 
 const CardContact = styled.div<CardPropos>`

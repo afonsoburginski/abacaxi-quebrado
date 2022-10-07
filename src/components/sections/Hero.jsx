@@ -24,6 +24,12 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width:415px) {
+    background-size: 145%;
+    background-position: top;
+    height: 250px;
+
+  }
 `;
 const Hero = ({
   className,
@@ -55,17 +61,17 @@ const Hero = ({
   return (
     <section {...props} className={outerClasses}>
       <Container>
-        <div className={innerClasses}>
+        <div className={innerClasses} >
           <div className="hero-content">
             <h1
-              className="mt-0 mb-16 reveal-from-bottom ta-l"
+              className="mt-0 mb-16 reveal-from-bottom ta-l is-revealed hero-mobile"
               data-reveal-delay="200"
             >
               Confinamento Abacaxi Quebrado
             </h1>
             <div className="container-m">
               <p
-                className="m-0 mb-32 reveal-from-bottom ta-l"
+                className="m-0 mb-32 reveal-from-bottom ta-l is-revealed hero-mobile"
                 data-reveal-delay="400"
                 style={{ fontSize: "20px" }}
               >

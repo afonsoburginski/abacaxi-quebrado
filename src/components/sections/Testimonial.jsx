@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import classNames from "classnames";
 
 import { SectionTilesProps } from "../../utils/SectionProps";
@@ -57,8 +57,12 @@ const Testimonial = ({
 
   const innerClasses = classNames(
     "testimonial-inner section-inner",
-    bottomDivider && "has-bottom-divider"
+    bottomDivider && "has-bottom-divider",
+    "paddingTopZero"
   );
+
+  const [isActive, setIsactive] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
 
   const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left");
 
@@ -66,29 +70,43 @@ const Testimonial = ({
     <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
+
+          <div className="container-m">
+            <p
+              className="m-0 mb-32 reveal-from-bottom ta-l is-revealed"
+              data-reveal-delay="400"
+              style={{ 
+                textAlign: "center",
+                fontSize: "20px", 
+                fontWeight: "600",
+              }}
+            >
+              Valorizando a qualidade do gado.
+            </p>
+          </div>
+
           <div className={tilesClasses}>
-            <div
+            <a
               className="tiles-item reveal-from-right"
               data-reveal-delay="200"
+              href="#1"
+              onClick={() => setActiveNav("#1")}
+
             >
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <h4 className="dark">Sobre</h4>
-                  <p className="text-sm mb-0 dark">Nosso gado e história</p>
-                </div>
+              <div className="tiles-item-inner paddingZero" >
+                <h4 className="dark">Sobre</h4>
+                <p className="text-sm mb-0 dark">Nosso gado e história</p>
               </div>
-            </div>
+            </a>
 
             <div
               className="tiles-item reveal-from-right"
               data-reveal-delay="200"
               onClick={() => setTypeCarousel("fotos")}
             >
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <h4 className="dark">Fotos</h4>
-                  <p className="text-sm mb-0 dark">Conheça nossa fazenda</p>
-                </div>
+              <div className="tiles-item-inner paddingZero">
+                <h4 className="dark">Fotos</h4>
+                <p className="text-sm mb-0 dark">Conheça nossa fazenda</p>
               </div>
             </div>
 
@@ -97,11 +115,9 @@ const Testimonial = ({
               data-reveal-delay="200"
               onClick={() => setTypeCarousel("videos")}
             >
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <h4 className="dark">Vídeos</h4>
-                  <p className="text-sm mb-0 dark">Nossos vídeos</p>
-                </div>
+              <div className="tiles-item-inner paddingZero">
+                <h4 className="dark">Vídeos</h4>
+                <p className="text-sm mb-0 dark">Nossos vídeos</p>
               </div>
             </div>
           </div>

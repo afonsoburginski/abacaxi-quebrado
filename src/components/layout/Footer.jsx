@@ -24,6 +24,10 @@ const Nav = styled.div`
   align-items: stretch;
   background-color: #00A0C1;
   padding: 2rem 0 3rem 0;
+
+  @media screen and (max-width:415px) {
+   display: grid;
+  }
 `;
 
 const Container = styled.div`
@@ -119,8 +123,8 @@ const Footer = ({
           </div>
 
           <div className="footer-nav">
-            <ul className="list-reset">
-              <h5>
+            <ul className="list-reset" style={{ padding: "0 20px" }}>
+              <h5 style={{ padding:" 0 12px" }}>
                 Endereço
               </h5>
               <li>

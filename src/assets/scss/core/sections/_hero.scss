@@ -9,10 +9,21 @@
 .hero-inner {
 	margin-left: -160px;
 
+	@media screen and (max-width:415px) {
+		margin-left: 0px;
+	}
+
 	// Affects only hero full
 	> .hero-content + .hero-figure,
 	> .hero-figure + .hero-content {
 		margin-top: $hero--inner-padding-v_mobile;
+		
+        @media screen and (max-width:415px) {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+        }
 	}
 
 	> .hero-figure {
@@ -76,5 +87,25 @@
 		> .hero-figure + .hero-content {
 			margin-top: $hero--inner-padding-v_desktop;
 		}
+	}
+}
+
+.hero-mobile {
+	@media screen and (max-width:415px) {
+		display: none;
+	}
+}
+
+.paddingTopZero {
+	padding-top: 0px;
+}
+
+.paddingZero {
+	@media screen and (max-width:415px) {
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		align-items: center;
 	}
 }
